@@ -1,0 +1,30 @@
+{
+  "name": "cosmetics-ecommerce-website",
+  "version": "1.0.0",
+  "description": "Complete e-commerce website for cosmetics store",
+  "main": "index.php",
+  "scripts": {
+    "build": "npm run build-css",
+    "build-css": "node-sass assets/scss/ -o assets/css/",
+    "watch": "node-sass assets/scss/ -o assets/css/ --watch",
+    "minify": "uglifyjs assets/js/main.js -o assets/js/main.min.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "php",
+    "mysql",
+    "cosmetics",
+    "shopping-cart"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "uglify-js": "^3.17.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "jquery": "^3.6.0",
+    "font-awesome": "^6.2.0"
+  }
+}
