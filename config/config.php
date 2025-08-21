@@ -40,11 +40,11 @@ define('DB_COLLATION', 'utf8mb4_unicode_ci'); // Collation
 // SITE CONFIGURATION
 // ===========================================
 define('SITE_URL', 'http://localhost:3000/Calla Noa Website/'); // Update to match your folder path
-define('SITE_NAME', 'Beauty Cosmetics Store');
-define('SITE_DESCRIPTION', 'Premium cosmetics and beauty products online store');
-define('SITE_EMAIL', 'admin@cosmeticsstore.com');
-define('CONTACT_EMAIL', 'contact@cosmeticsstore.com');
-define('SUPPORT_EMAIL', 'support@cosmeticsstore.com');
+define('SITE_NAME', 'Calla Noa Cosmetics');
+define('SITE_DESCRIPTION', 'Premium luxury cosmetics and beauty products with elegant natural ingredients');
+define('SITE_EMAIL', 'callacosmetics@gmail.com');
+define('CONTACT_EMAIL', 'contact@callanoa.com');
+define('SUPPORT_EMAIL', 'support@callanoa.com');
 
 // ===========================================
 // FILE UPLOAD SETTINGS

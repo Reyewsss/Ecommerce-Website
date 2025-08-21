@@ -16,7 +16,7 @@ require_once __DIR__ . '/../config/database.php';
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=The+Seasons:wght@400&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -36,7 +36,13 @@ require_once __DIR__ . '/../config/database.php';
                 <!-- Logo/Brand -->
                 <div class="nav-brand">
                     <a href="index.php" class="logo">
-                        <span class="logo-text">Beauty Store</span>
+                        <div class="logo-container">
+                            <img src="uploads/img/Calla Noa Logo 3.png" alt="Calla Noa Cosmetics" class="logo-image">
+                            <div class="logo-text-container">
+                                <p class="logo-text">CALLA NOA</p>
+                                <p class="logo-subtext">COSMETICS</p>
+                            </div>
+                        </div>
                     </a>
                 </div>
                 
@@ -68,12 +74,9 @@ require_once __DIR__ . '/../config/database.php';
                         </div>
                     <?php else: ?>
                         <div class="auth-buttons">
-                            <a href="login.php" class="btn-secondary">
-                                <i class="fas fa-sign-in-alt"></i> Login
-                            </a>
-                            <a href="register.php" class="btn-primary">
-                                <i class="fas fa-user-plus"></i> Register
-                            </a>
+                            <button class="btn-primary" id="getStartedBtn">
+                                 Get Started
+                            </button>
                         </div>
                     <?php endif; ?>
                 </div>
@@ -100,6 +103,76 @@ require_once __DIR__ . '/../config/database.php';
                 <div class="empty-cart">
                     <i class="fas fa-shopping-cart"></i>
                     <p>No items found</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="auth-modal" id="loginModal">
+        <div class="modal-overlay" id="loginOverlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Login</h2>
+                <button class="close-modal" id="closeLogin">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email:</label>
+                        <input type="email" id="loginEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password:</label>
+                        <input type="password" id="loginPassword" name="password" required>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full-width">Login</button>
+                </form>
+                <div class="modal-footer">
+                    <p>Don't have an account? <a href="#" id="switchToRegister">Register here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="auth-modal" id="registerModal">
+        <div class="modal-overlay" id="registerOverlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Register</h2>
+                <button class="close-modal" id="closeRegister">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="registerFirstName">First Name:</label>
+                        <input type="text" id="registerFirstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerLastName">Last Name:</label>
+                        <input type="text" id="registerLastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email:</label>
+                        <input type="email" id="registerEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Password:</label>
+                        <input type="password" id="registerPassword" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerConfirmPassword">Confirm Password:</label>
+                        <input type="password" id="registerConfirmPassword" name="confirmPassword" required>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full-width">Register</button>
+                </form>
+                <div class="modal-footer">
+                    <p>Already have an account? <a href="#" id="switchToLogin">Login here</a></p>
                 </div>
             </div>
         </div>

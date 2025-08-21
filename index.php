@@ -9,9 +9,12 @@ include_once 'config/database.php';
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Discover Your Beauty</h1>
-                <p>Premium cosmetics for the modern you</p>
+                <h1>Discover Your <span class="highlight">Beauty</span></h1>
+                <p>Experience the elegance of premium cosmetics designed for the sophisticated, modern woman. Enhance your natural radiance with our luxurious collection.</p>
                 <a href="products.php" class="btn-primary">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="uploads/img/Model 1.png" alt="Beautiful woman with Calla Noa cosmetics" class="hero-model">
             </div>
         </div>
     </section>
