@@ -77,15 +77,15 @@ if (!$order_id) {
         </div>
         
         <div class="confirmation-actions">
-            <a href="products.php" class="btn-secondary btn-large">
+            <a href="products.php" class="btn btn-secondary btn-large">
                 <i class="fas fa-shopping-bag"></i>
                 Continue Shopping
             </a>
-            <a href="index.php" class="btn-primary btn-large">
+            <a href="index.php" class="btn btn-primary btn-large">
                 <i class="fas fa-home"></i>
                 Go to Homepage
             </a>
-            <button onclick="window.print()" class="btn-outline">
+            <button onclick="window.print()" class="btn btn-outline">
                 <i class="fas fa-print"></i>
                 Print Receipt
             </button>

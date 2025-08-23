@@ -23,9 +23,9 @@ require_once __DIR__ . '/../config/database.php';
     
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    
+    <link rel="stylesheet" href="assets/css/buttons.css">
+
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
@@ -37,7 +37,7 @@ require_once __DIR__ . '/../config/database.php';
                 <div class="nav-brand">
                     <a href="index.php" class="logo">
                         <div class="logo-container">
-                            <img src="uploads/img/Calla Noa Logo 3.png" alt="Calla Noa Cosmetics" class="logo-image">
+                            <img src="uploads/img/Logo/Calla Noa Logo 3.png" alt="Calla Noa Cosmetics" class="logo-image">
                             <div class="logo-text-container">
                                 <p class="logo-text">CALLA NOA</p>
                                 <p class="logo-subtext">COSMETICS</p>
@@ -74,7 +74,7 @@ require_once __DIR__ . '/../config/database.php';
                         </div>
                     <?php else: ?>
                         <div class="auth-buttons">
-                            <button class="btn-primary" id="getStartedBtn">
+                            <button class="started-btn" id="getStartedBtn">
                                  Get Started
                             </button>
                         </div>
@@ -128,7 +128,7 @@ require_once __DIR__ . '/../config/database.php';
                         <label for="loginPassword">Password:</label>
                         <input type="password" id="loginPassword" name="password" required>
                     </div>
-                    <button type="submit" class="btn-primary btn-full-width">Login</button>
+                    <button type="submit" class="login-btn btn-full-width">Login</button>
                 </form>
                 <div class="modal-footer">
                     <p>Don't have an account? <a href="#" id="switchToRegister">Register here</a></p>
@@ -169,7 +169,7 @@ require_once __DIR__ . '/../config/database.php';
                         <label for="registerConfirmPassword">Confirm Password:</label>
                         <input type="password" id="registerConfirmPassword" name="confirmPassword" required>
                     </div>
-                    <button type="submit" class="btn-primary btn-full-width">Register</button>
+                    <button type="submit" class="register-btn btn-full-width">Register</button>
                 </form>
                 <div class="modal-footer">
                     <p>Already have an account? <a href="#" id="switchToLogin">Login here</a></p>

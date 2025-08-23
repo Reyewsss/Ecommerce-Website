@@ -13,8 +13,8 @@ include_once 'includes/header.php';
             <div class="total-section">
                 <h3>Total: <span id="cartTotal">$0.00</span></h3>
                 <div class="cart-actions">
-                    <button class="btn-secondary" onclick="window.location.href='products.php'">Continue Shopping</button>
-                    <button class="btn-primary" id="checkoutBtn">Proceed to Checkout</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='products.php'">Continue Shopping</button>
+                    <button class="btn btn-primary" id="checkoutBtn">Proceed to Checkout</button>
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@ function displayCartPage() {
                 <i class="fas fa-shopping-cart"></i>
                 <h3>Your cart is empty</h3>
                 <p>Add some products to your cart to continue shopping</p>
-                <a href="products.php" class="btn-primary">Shop Now</a>
+                <a href="products.php" class="btn btn-primary">Shop Now</a>
             </div>
         `);
         $('#cartSummary').hide();
